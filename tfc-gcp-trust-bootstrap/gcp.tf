@@ -91,6 +91,6 @@ resource "google_service_account_iam_member" "tfc_service_account_member" {
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/google_project_iam
 resource "google_project_iam_member" "tfc_project_member" {
   project = var.gcp_project_id
-  role    = "roles/editor"
+  role    = "roles/owner"
   member  = "serviceAccount:${google_service_account.tfc_service_account.email}"
 }
