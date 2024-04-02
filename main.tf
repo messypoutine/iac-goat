@@ -4,7 +4,8 @@ module "project-services" {
   project_id = var.project_id
   activate_apis = [
     "compute.googleapis.com",
-    "iap.googleapis.com"
+    "iap.googleapis.com",
+    "serviceusage.googleapis.com",
   ]
 }
 
