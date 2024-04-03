@@ -6,6 +6,7 @@ module "project-services" {
     "compute.googleapis.com",
     "iap.googleapis.com",
     "serviceusage.googleapis.com",
+    "bigquery.googleapis.com",
   ]
 }
 
